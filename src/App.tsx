@@ -6,6 +6,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate,
 } from 'react-router-dom'
 import { Suspense } from 'react'
 import Dashboard from './layouts/dashboard'
@@ -18,9 +19,9 @@ function App() {
       <Suspense fallback={<div>Loading....</div>}>
         <Routes>
           <Route
-            path="/dashboard/*"
+            path="/home/*"
             element={
-              <Dashboard layout="dashboard" />
+              <Dashboard layout="home" />
             }
           ></Route>
           <Route
@@ -29,6 +30,10 @@ function App() {
               <Dashboard layout="series" />
             }
           ></Route>
+
+          <Route path="*" element={
+            <Navigate to="/home" replace />
+          } />
 
         </Routes>
       </Suspense>

@@ -22,13 +22,13 @@ const icon = {
 
 export const routes = [
   {
-    layout: 'dashboard',
-    name: 'Dashboard',
+    layout: 'home',
+    name: 'Home',
     pages: [
       {
         isVisible: false,
         icon: <HiHome {...icon} />,
-        name: 'dashboard',
+        name: 'home',
         path: '/',
         element: <Dashboard />,
         parent: 0,

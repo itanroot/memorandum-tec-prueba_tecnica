@@ -1,7 +1,10 @@
 # prueba tecnica
 Para resaltar que el repositorio brindado con el archivo "data.json" estaba erroneo las URLS de las imagenes por lo que decidi copiar el contenido del api "data.json" de la url brindada https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json.
 
+![Series](image.png)
 
+
+![Home](image-1.png)
 
 ## ¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
 Utilice el template de inicializacion React + TypeScript + Vite para agilizar el desarrollo, a demas que ya e trabajado antes con ello. El uso de componentes y el tipado de typescript facilita tambien el desarrollo y las buenas practicas
