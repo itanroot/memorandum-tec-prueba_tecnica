@@ -43,7 +43,7 @@ La compilación se minimiza y los nombres de archivo incluyen los hashes.\
 
 Consulta la sección sobre [implementación](https://facebook.github.io/create-react-app/docs/deployment) para obtener más información.
 
-## Tecnología utilizada en este proyecto
+## Tecnologías y caracteristicsa utilizada en este proyecto
 
 - https://reactrouter.com/
 - https://github.com/creativetimofficial/material-tailwind
@@ -51,6 +51,7 @@ Consulta la sección sobre [implementación](https://facebook.github.io/create-r
 - https://github.com/tailwindlabs/heroicons
 - https://www.material-tailwind.com/
 - https://tailwindcss.com/
+- https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
 
 # React + TypeScript + Vite
 
