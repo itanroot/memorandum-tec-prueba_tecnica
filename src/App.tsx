@@ -30,6 +30,12 @@ function App() {
               <Dashboard layout="series" />
             }
           ></Route>
+          <Route
+            path="/movies/*"
+            element={
+              <Dashboard layout="movies" />
+            }
+          ></Route>
 
           <Route path="*" element={
             <Navigate to="/home" replace />

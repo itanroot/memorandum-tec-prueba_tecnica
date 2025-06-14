@@ -17,8 +17,8 @@ interface Props {
 export default function CardDefault({ color, img, title, handleClick, footer, description }: Props) {
   
   return (
-    <Card className="mt-6 justify-between" >
-      <CardHeader color="blue-gray" className="relative h-56" >
+    <Card className="mt-6 justify-between bg-cyan-500 hover:bg-cyan-300" >
+      <CardHeader color="blue-gray" className="relative h-50" >
         {img}
       </CardHeader>
       < CardBody >

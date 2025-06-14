@@ -11,7 +11,7 @@ export function Dashboard({ layout }: DashboardProps) {
   let _layout = layout
 
   return (
-    <div className="min-h-screen bg-primary-50 ">
+    <div className="min-h-screen bg-indigo-50 ">
       <Navbar />
       <Breadcrumbs current_page={layout}/>
       <Routes>

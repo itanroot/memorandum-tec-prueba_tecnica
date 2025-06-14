@@ -15,6 +15,7 @@ import {
 } from '@heroicons/react/24/solid'
 import Dashboard from '@/pages/dashboard'
 import Series from '@/pages/series'
+import Movies from './pages/movies'
 
 const icon = {
   className: 'w-5 h-5',
@@ -46,6 +47,21 @@ export const routes = [
         name: 'series',
         path: '/',
         element: <Series />,
+        parent: 0,
+        subPages: [],
+      },
+    ],
+  },
+  {
+    layout: 'movies',
+    name: 'Movies',
+    pages: [
+      {
+        isVisible: false,
+        icon: <HiHome {...icon} />,
+        name: 'movies',
+        path: '/',
+        element: <Movies />,
         parent: 0,
         subPages: [],
       },

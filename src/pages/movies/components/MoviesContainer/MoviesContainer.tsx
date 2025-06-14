@@ -12,9 +12,10 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import { DialogDefault } from '@/widgets/modal/dialogdefault'
+import NoDataAvailable from '@/common/components/NoDataAvailable/NoDataAvailable'
 
 
-export default function SeriesContainer() {
+export default function MoviesContainer() {
   const dispatch = useAppDispatch()
   const { data, loading, error } = useAppSelector(state => state.content)
   const [selectedItem, setSelectedItem] = useState(null)
@@ -26,16 +27,16 @@ export default function SeriesContainer() {
   /* 
   Mostrar sólo si contienen el atributo releaseYear >= 2010
   Mostrar los primeros 20 resultados (entries). No es necesario paginar para ver más resultados.
-  Para la página de "Series" usar resultados con programType igual a series
+  Para la página de "Movies" usar resultados con programType igual a Movies
   */
   const filtered = data
-    .filter((item: any) => item.programType === 'series' && item.releaseYear >= 2010)
+    .filter((item: any) => item.programType === 'movie' && item.releaseYear >= 2010)
     .slice(0, 20)
-    .sort((a:any, b:any) => a.title.localeCompare(b.title))
+    .sort((a: any, b: any) => a.title.localeCompare(b.title))
+
 
   if (loading) return <Loading />
   if (error) return <Error />
-
 
   const handleOpenModal = (item: any) => {
     setSelectedItem(item)
@@ -49,7 +50,7 @@ export default function SeriesContainer() {
 
 
   return (
-    <div className="container flex flex-col items-center justify-center mx-auto">
+    <div className="container flex flex-col items-center justify-center mx-auto pb-6">
       <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-7 gap-4">
         {filtered.map((item: any) => (
           <CardDefault

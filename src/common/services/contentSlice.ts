@@ -23,6 +23,7 @@ const contentSlice = createSlice({
       .addCase(fetchContent.fulfilled, (state, action) => {
         state.data = action.payload
         state.loading = false
+        console.log(state.data)
       })
       .addCase(fetchContent.rejected, state => {
         state.loading = false
